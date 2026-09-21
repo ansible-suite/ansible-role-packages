@@ -1,0 +1,13 @@
+---
+galaxy_info:
+  role_name: packages
+  namespace: ansible_suite
+  author: TUL
+  description: Install and remove system packages on supported platforms
+  license: MIT
+  min_ansible_version: "2.12"
+  galaxy_tags:
+    - system
+    - packages
+
+dependencies: []
