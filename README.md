@@ -4,6 +4,14 @@ Role pro instalaci a odinstalaci systémových balíčků. Používá
 `ansible.builtin.package`, takže výběr konkrétního správce balíčků deleguje na
 cílový operační systém.
 
+## Example `requirements.yml` for Ansible site
+
+```yaml
+roles:
+  - name: ansible-suite.packages
+    src: git+https://github.com/ansible-suite/ansible-role-packages.git
+```
+
 ## Použití
 
 ```yaml
@@ -20,6 +28,4 @@ cílový operační systém.
           - telnet
 ```
 
-Oba seznamy jsou ve výchozím nastavení prázdné. Balíčky v `packages` se
-instalují a balíčky v `packages_remove` se odstraňují. Hodnoty mohou být i
-vnořené seznamy; role je před použitím zploští pomocí filtru `flatten`.
+Oba seznamy jsou ve výchozím nastavení prázdné. Balíčky v `packages` se instalují a balíčky v `packages_remove` se odstraňují. Hodnoty mohou být i vnořené seznamy; role je před použitím zploští pomocí filtru `flatten`.
