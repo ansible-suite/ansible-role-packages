@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: packages
-  namespace: ansible_suite
+  namespace: ansible-suite
   author: TUL
   description: Install and remove system packages on supported platforms
   license: MIT
